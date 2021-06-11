@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operating system</title>
+</head>
+
+<body>
+    <p class="logo">operating system</p>
+    <!-- list of anchor -->
+    <ul>
+        <li><a href="#home">home</a> </li>
+        <li><a href="#classification">classification</a></li>
+        <li><a href="#microsoft">Modes</a></li>
+        <li><a href="#Linux">Unix</a></li>
+        <li><a href="#macOS">BSD</a></li>
+
+    </ul>
+    <div id="home">
+        <p>Time-sharing operating systems schedule tasks for efficient use of the system and may also include accounting
+            software for cost allocation of processor time, mass storage, printing, and other resources.
+
+            For hardware functions such as input and output and memory allocation, the operating system acts as an
+            intermediary between programs and the computer hardware
+            For hardware functions such as input and output and memory allocation, the operating system acts as an
+            intermediary between programs and the computer hardware,
+            hardware and frequently makes system calls to an OS function or is interrupted by it. Operating systems are
+            found on many devices that contain a computer – from cellular phones and video game consoles to web servers
+            and supercomputers.
+            <br>
+            The dominant general-purpose[3] desktop operating system is Microsoft Windows with a market share of around
+            76.45%. macOS by Apple Inc. is in second place (17.72%), and the varieties of Linux are collectively in
+            third place (1.73%).[4] In the mobile sector (including smartphones and tablets), Android's share is up to
+            72% in the year 2020
+            According to third quarter 2016 data, Android's share on smartphones is dominant with 87.5 percent with also
+            a growth rate of 10.3 percent per year, followed by Apple's iOS with 12.1 percent with per year decrease in
+            market share of 5.2 percent, while other
+            operating systems amount to just 0.3 percent.[6] Linux distributions are dominant in the server and
+            supercomputing sectors. Other specialized classes of operating systems (special-purpose operating
+            systems)[3][7]), such as embedded and real-time systems, exist for many applications. Security-focused
+            operating systems also exist. Some operating systems have low system requirements (e.g. light-weight Linux
+            distribution). Others may have higher system requirements.
+            Some operating systems require installation or may come pre-installed with purchased computers
+            (OEM-installation), whereas others may run directly from media (i.e. live cd) or flash memory
+
+        </p>
+    </div>
+    <!-- table for type of operating system-->
+    <div id="classification">
+        <table>
+            <caption>classification of operating systme</caption>
+            <tr>
+                <th scope="col"> Single-tasking and multi-tasking </th>
+            </tr>
+            <tr>
+                <td>Single- and multi-user</td>
+            </tr>
+            <tr>
+                <th scope="row"> Distributed </th>
+            </tr>
+            <tr>
+                <th scope="row">Templated </th>
+            </tr>
+            <tr>
+                <th scope="row"> Embedded </th>
+            </tr>
+            <tr>
+                <th scope="row"> Real-time </th>
+            </tr>
+            <tr>
+                <th scope="row"> library </th>
+            </tr>
+        </table>
+    </div>
+    <div class="Modes">
+        <p>
+            Modern microprocessors (CPU or MPU) support multiple modes of operation. CPUs with this capability offer at
+            least two modes: user mode and supervisor mode. In general terms, supervisor mode operation allows
+            unrestricted access to all machine resources, including all MPU instructions. <br>
+            instruction use and typically disallows direct access to machine resources. CPUs might have other modes
+            similar to user mode as well, such as the virtual modes in order to emulate older processor types, such as
+            16-bit processors on a 32-bit one, or 32-bit processors on a 64-bit one.<br>
+            At power-on or reset, the system begins in supervisor mode. Once an operating system kernel has been loaded
+            and started, the boundary between user mode and supervisor mode (also known as kernel mode) can be
+            established.<br>
+            Supervisor mode is used by the kernel for low level tasks that need unrestricted access to hardware, such as
+            controlling how memory is accessed, and communicating with devices such as disk drives and video display
+            devices. User mode, in contrast, is used for almost everything else. Application programs, such as word
+            processors and database managers,<br>
+            operate within user mode, and can only access machine resources by turning control over to the kernel, a
+            process which causes a switch to supervisor mode. Typically, the transfer of control to the kernel is
+            achieved by executing a software interrupt instruction, such as the Motorola 68000 TRAP instruction.<br>
+            The software interrupt causes the microprocessor to switch from user mode to supervisor mode and begin
+            executing code that allows the kernel to take control.<br>
+            In user mode, programs usually have access to a restricted set of microprocessor instructions, and generally
+            cannot execute any instructions that could potentially cause disruption to the system's operation. In
+            supervisor mode, instruction execution restrictions are typically removed, allowing the kernel unrestricted
+            access to all machine resources.<br>
+            The term "user mode resource" generally refers to one or more CPU registers, which contain information that
+            the running program isn't allowed to alter. Attempts to alter these resources generally causes a switch to
+            supervisor mode, where the operating system can deal with the illegal operation the program was attempting,
+            for example, by forcibly terminating ("killing") the program).<br>
+        </p>
+        <!-- img  -->
+        <img src="img/microsoft.png" alt="microsoft">
+    </div>
+    <div class="unix">
+        <p>
+            Unix was originally written in assembly language.[15] Ken Thompson wrote B, mainly based on BCPL, based on
+            his experience in the MULTICS project. B was replaced by C, and Unix, rewritten in C, developed into a
+            large, complex family of inter-related operating systems which have been influential in every modern
+            operating system
+            The Unix-like family is a diverse group of operating systems, with several major sub-categories including
+            System V, BSD, and Linux. The name "UNIX" is a trademark of The Open Group which licenses it for use with
+            any operating system that has been shown to conform to their definitions.
+            "UNIX-like" is commonly used to refer to the large set of operating systems which resemble the original
+            UNIX.
+            Unix-like systems run on a wide variety of computer architectures. They are used heavily for servers in
+            business, as well as workstations in academic and engineering environments.
+            Four operating systems are certified by The Open Group (holder of the Unix trademark) as Unix. HP's HP-UX
+            and IBM's AIX are both descendants of the original System V Unix and are designed to run only on their
+            respective vendor's hardware. In contrast, Sun Microsystems's Solaris can run on multiple types of hardware,
+            including x86 and Sparc servers, and PCs. Apple's macOS, a replacement for Apple's earlier (non-Unix) Mac
+            OS, is a hybrid kernel-based BSD variant derived from NeXTSTEP, Mach, and FreeBSD.
+            Unix interoperability was sought by establishing the POSIX standard. The POSIX standard can be applied to
+            any operating system, although it was originally created for various Unix variants.
+
+        </p>
+        <!-- img  -->
+        <img src="img/Linux.png" alt="linux">
+    </div>
+    <div class="BSD">
+        <p>
+            A subgroup of the Unix family is the Berkeley Software Distribution family, which includes FreeBSD, NetBSD,
+            and OpenBSD. These operating systems are most commonly found on webservers, although they can also function
+            as a personal computer OS.<br>
+            The Internet owes much of its existence to BSD, as many of the protocols now commonly used by computers to
+            connect, send and receive data over a network were widely implemented and refined in BSD. The World Wide Web
+            was also first demonstrated on a number of computers running an OS based on BSD called NeXTSTEP.<br>
+            In 1974, University of California, Berkeley installed its first Unix system. Over time, students and staff
+            in the computer science department there began adding new programs to make things easier, such as text
+            editors. <br>
+            received new VAX computers in 1978 with Unix installed, the school's undergraduates modified Unix even more
+            in order to take advantage of the computer's hardware possibilities. The Defense Advanced Research Projects
+            Agency of the US Department of Defense took interest, and decided to fund the project. Many schools,
+            corporations, and government organizations took notice and started to use Berkeley's version of Unix instead
+            of the official one distributed by AT&T.<br>
+            Steve Jobs, upon leaving Apple Inc. in 1985, formed NeXT Inc., a company that manufactured high-end
+            computers running on a variation of BSD called NeXTSTEP. One of these computers was used by Tim Berners-Lee
+            as the first webserver to create the World Wide Web.<br>
+            Developers like Keith Bostic encouraged the project to replace any non-free code that originated with Bell
+            Labs. Once this was done, however, AT&T sued. After two years of legal disputes, the BSD project spawned a
+            number of free derivatives, such as NetBSD and FreeBSD (both in 1993), and OpenBSD (from NetBSD in
+            1995.<br>
+
+        </p>
+        <!-- img  -->
+        <img src="https://www.howtogeek.com/wp-content/uploads/2018/08/img_5b68e80f77e33.png?height=200p&trim=2,2,2,2"
+            alt="macOs">
+    </div>
+
+</body>
+
+</html>
